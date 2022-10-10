@@ -6,28 +6,25 @@ export const Profile = ({ user: {username,tag ,location,avatar, stats:{followers
     return (
 <Wrapper>
   <Description >
-    <Avatar
-      src={avatar}
-      alt="User avatar"
-    />
-    <Username >{username}</Username>
-    <UserInformation >@{tag}</UserInformation>
-    <UserInformation >{location}</UserInformation>
+      <Avatar src={avatar} alt="User avatar"/>
+      <Username >{username}</Username>
+      <UserInformation >@{tag}</UserInformation>
+      <UserInformation >{location}</UserInformation>
   </Description>
 
   <StatsList >
-    <StatsItem>
-      <StatsText >Followers</StatsText>
-      <StatsText bold >{followers}</StatsText>
-    </StatsItem>
-    <StatsItem>
-      <StatsText >Views</StatsText>
-      <StatsText bold >{views}</StatsText>
-    </StatsItem>
-    <StatsItem>
-      <StatsText >Likes</StatsText>
-      <StatsText bold>{likes}</StatsText>   
-    </StatsItem>
+      <StatsItem>
+          <StatsText >Followers</StatsText>
+          <StatsText bold >{followers}</StatsText>
+      </StatsItem>
+      <StatsItem>
+          <StatsText >Views</StatsText>
+          <StatsText bold >{views}</StatsText>
+      </StatsItem>
+      <StatsItem>
+          <StatsText >Likes</StatsText>
+          <StatsText bold>{likes}</StatsText>   
+      </StatsItem>
   </StatsList>
 </Wrapper>
     );
