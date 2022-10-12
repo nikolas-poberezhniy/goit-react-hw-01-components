@@ -1,5 +1,5 @@
 import { BsCircleFill } from 'react-icons/bs';
-import { ListItem, Avatar, Name,FriendsList } from './friends.styled';
+import { ListItem, Avatar, Name,FriendsList } from './Friends.styled';
 import PropTypes from 'prop-types'
 
 export const FriendList = ({ friendsArr }) => {

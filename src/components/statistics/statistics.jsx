@@ -1,8 +1,8 @@
-import { Wrapper,StatisticsTitle,StatisticsList,StatisticsItem,ItemLabel,ItemPercentage} from "./statistics.slyled"
+import { Wrapper,StatisticsTitle,StatisticsList,StatisticsItem,ItemLabel,ItemPercentage} from "./Statistics.slyled"
 import PropTypes from 'prop-types'
 
 export const Statistics = ({ stats, title }) => { 
-    console.log(stats.label)
+    
     return (
         <Wrapper>
             {title && <StatisticsTitle>{ title}</StatisticsTitle>}
@@ -25,12 +25,12 @@ export const Statistics = ({ stats, title }) => {
 }
 
 Statistics.propTypes = {
+    title: PropTypes.string.isRequired,
     stats: PropTypes.arrayOf(
        PropTypes.exact({
             id: PropTypes.string.isRequired,
             label: PropTypes.string.isRequired,
             percentage:PropTypes.number.isRequired
         })
-  ),
-
+    ),
 }

@@ -1,4 +1,4 @@
-import { TransactionBody, TransactionBodyCell, TransactionHead, TransactionHeadCell, TransactionTable } from "./transactions.styled";
+import { TransactionBody, TransactionBodyCell, TransactionHead, TransactionHeadCell, TransactionTable } from "./Transactions.styled";
 import PropTypes from 'prop-types'
 
 export const Transactions = ({ transactions }) => {
